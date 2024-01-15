@@ -7,6 +7,7 @@ import CartPage from "./pages/CartPage";
 import ItemPage from './pages/ItemPage';
 import { products } from "./data";
 import Footer from "./components/Footer";
+import HeroBanner from "./components/HeroBanner";
 
 function App() {
   
@@ -16,7 +17,10 @@ function App() {
     <div className=" flex flex-col items-center h-screen justify-between gap-8">
       <ShopContextProvider>
       <BrowserRouter>
-        <Header />
+        <div>
+          <Header />
+          <HeroBanner />
+        </div>
         <Routes>
             <Route
               path="/"
