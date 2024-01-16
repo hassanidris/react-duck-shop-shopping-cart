@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Cart from './Cart';
 import { TiShoppingCart } from 'react-icons/ti';
 // import banner from '../assests/2.jpg';
-import logo from '../assests/logo.png';
+import logo from '../assets/logo.png';
 // import SimpleSlider from "./SimpleSlider";
 
 function Header() {
