@@ -8,7 +8,7 @@ import logo from '../assets/logo.png';
 function Header() {
   return (
     <div>
-    <div className="flex h-16 p-2.5 text-xs text-white bg-cyan-600 justify-between items-center w-screen fixed z-50">
+    <div className="flex h-16 p-2.5 text-xs text-white bg-[#0093b7] justify-between items-center w-screen fixed z-50">
       {/* <div className=" font-serif text-3xl">Duck Shop</div> */}
       <div><Link to='/'><img className=" absolute top-5 lg:top-1 left-5 w-16 md:w-32" src={logo} /></Link></div>
       <div className="flex items-end gap-2 text-xl pr-4">
