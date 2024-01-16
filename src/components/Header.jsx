@@ -10,9 +10,9 @@ function Header() {
     <div>
     <div className="flex h-16 p-2.5 text-xs text-white bg-cyan-600 justify-between items-center w-screen fixed z-50">
       {/* <div className=" font-serif text-3xl">Duck Shop</div> */}
-      <div><img className=" absolute top-5 lg:top-1 left-5 w-16 md:w-32" src={logo} /></div>
+      <div><Link to='/'><img className=" absolute top-5 lg:top-1 left-5 w-16 md:w-32" src={logo} /></Link></div>
       <div className="flex items-end gap-2 text-xl pr-4">
-        <Link to='/'><span className=" hover:text-cyan-950 font-normal">Shop</span></Link>
+        <Link to='/'><span className=" hover:text-cyan-950 font-semibold">Shop</span></Link>
         <span> | </span>
         <Link to='/cart'><TiShoppingCart className=" hover:text-cyan-950" /></Link>
         <div className=" relative h-5 w-5 text-sm bg-cyan-800 rounded-[50%] -translate-y-3 -translate-x-3">
