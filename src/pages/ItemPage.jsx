@@ -30,12 +30,11 @@ const ItemPage = () => {
   console.log('item', item)
   return (
     <div className=" bg-white w-[80vw] mt-5 p-8">
-      <div className="flex justify-center gap-8">
-        {/* <Product data={item.image} /> */}
-        <div className=" w-[40%]">
+      <div className="flex flex-col lg:flex-row justify-center gap-8">
+        <div className=" lg:w-[40%]">
           <img className="border-2 border-cyan-400" src={image} alt={name} />
         </div>
-        <div className="w-[60%] flex flex-col justify-between">
+        <div className="lg:w-[60%] flex flex-col justify-between">
 
           <div>
             <h2 className="text-3xl font-bold mb-3">{name}</h2>
@@ -43,7 +42,7 @@ const ItemPage = () => {
             <p>---</p>
             <p>{description}</p>
           </div>
-          <div className=" flex justify-end gap-3">
+          <div className=" flex justify-end gap-3 mt-5 lg:mt-0">
           <button className="btn flex justify-center gap-1" onClick={(e) => {
             e.preventDefault();
             addToCart(id);

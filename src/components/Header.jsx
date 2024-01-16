@@ -8,9 +8,9 @@ import logo from '../assests/logo.png';
 function Header() {
   return (
     <div>
-    <div className="flex h-16 p-2.5 text-xs text-white bg-cyan-600 justify-between items-center w-screen fixed">
+    <div className="flex h-16 p-2.5 text-xs text-white bg-cyan-600 justify-between items-center w-screen fixed z-50">
       {/* <div className=" font-serif text-3xl">Duck Shop</div> */}
-      <div><img className=" absolute top-1 left-5" src={logo} width={120} /></div>
+      <div><img className=" absolute top-5 lg:top-1 left-5 w-16 md:w-32" src={logo} /></div>
       <div className="flex items-end gap-2 text-xl pr-4">
         <Link to='/'><span className=" hover:text-cyan-950 font-normal">Shop</span></Link>
         <span> | </span>

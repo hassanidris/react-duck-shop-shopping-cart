@@ -16,7 +16,7 @@ export default function CartPage() {
   console.log('total' , totalAmount);
   
   return (
-    <>
+    <div className=" flex flex-col gap-4">
     <div className="flex flex-col gap-4">
         {products.map((product) => {
           if (cartItems[product.id] !== 0) {
@@ -25,16 +25,16 @@ export default function CartPage() {
         })}
     </div>
     {totalAmount > 0 ? (
-    <div className="flex items-center justify-between p-4 bg-white rounded-lg w-[60vw]">
-      <p><span className=" font-bold">Total =</span> {totalAmount} SEK</p>
-      <div className=" flex gap-4">
+    <div className="flex flex-col lg:flex-row items-center justify-between p-4 bg-white rounded-lg w-[60vw]">
+      <p className=" mb-3 lg:mb-0"><span className=" font-bold">Total =</span> {totalAmount} SEK</p>
+      <div className=" flex flex-col lg:flex-row gap-4">
       <button className="btn flex justify-center gap-1" onClick={() => navigate('/')}> <TbShoppingBagSearch size={20} /><span>Contiune Shopping</span></button>
         <button className="btn flex justify-center gap-1"><RiSecurePaymentLine size={20} /> <span>Proceed Checkout</span></button>
       </div>
     </div> ) : (
       <h1> Your Shopping Cart is Empty</h1>
       )}
-    </>
+    </div>
   );
 }
 
