@@ -16,7 +16,7 @@ function Product(props) {
         <h2 className="text-2xl font-semibold mt-4">{name}</h2>
         <p className=" p-2">{price} SEK</p>
         {/* <p className=" text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quos veniam veritatis, odio inventore, ullam labore voluptas tempore officia sequi aperiam..... <span className=" font-semibold">more</span> </p> */}
-        <p className=" text-sm">{description.substring(0, 80)+'...'} </p>
+        <p className=" text-sm">{description.substring(0, 70)+'...'} </p>
         <div className="flex flex-col lg:flex-row items-center text-sm gap-2 mt-6">
         <button className=" btn flex justify-center gap-1"
           onClick={(e) => {
